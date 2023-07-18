@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  public searchForm: FormGroup;
 
-  constructor() { }
+  constructor(
+    private fb: FormBuilder,
+
+  ) { 
+    this.searchForm = this.fb.group({
+      option: ["", Validators.required],
+      patrimony: ["", Validators.required],
+      location: ["", Validators.required]
+    })
+  }
 
   ngOnInit(): void {
   }
