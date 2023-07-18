@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ankira-4d179": {
+      "hosting": {
+        "ankira": [
+          "ankira-4d179"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ankira-4d179"
+  }
+}
