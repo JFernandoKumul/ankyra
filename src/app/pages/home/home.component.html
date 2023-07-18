@@ -1,1 +1,50 @@
-<p>home works!</p>
+<section class="banner">
+    <div class="title">
+        <p>Invierte en</p>
+        <h2>tu patrimonio hoy</h2>
+    </div>
+    <img src="assets/img/1.jpg" alt="banner">
+</section>
+
+<section class="form">
+    <div class="option-btn">
+        <button class="actived">Compra</button>
+        <button>Renta</button>
+    </div>
+
+    <form class="select-form" [formGroup]="searchForm">
+        <mat-form-field appearance="outline">
+            <mat-select required formControlName="patrimony">
+                <mat-option value="">Patrimonio</mat-option>
+                <mat-option value="" disabled="true">Habitacional</mat-option>
+                <mat-option value="casas">Casas</mat-option>
+                <mat-option value="casas">Departamentos</mat-option>
+                <mat-option value="casas">Terrenos</mat-option>
+                <mat-option value="casas">Otros</mat-option>
+                <mat-option value="" disabled="true">Comercial</mat-option>
+                <mat-option value="casas">Oficinas</mat-option>
+                <mat-option value="casas">Locales</mat-option>
+                <mat-option value="casas">Bodegas</mat-option>
+                <mat-option value="casas">consultorios</mat-option>
+                <mat-option value="casas">Terrenos</mat-option>
+                <mat-option value="others">Otros</mat-option>
+            </mat-select>
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-select required formControlName="location">
+                <mat-option value="">Ingresar ubicación</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+
+    <button type="submit" class="search">
+        <img src="assets/icons/bx-search-alt.svg" alt="search">
+        Buscar
+    </button>
+
+    <div class="aditional-options">
+        <p>Ver busqueda avanzada</p>
+        <p>Consulte todo el inventario</p>
+    </div>
+</section>
